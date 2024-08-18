@@ -72,6 +72,11 @@
     <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/ab917dddf5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Nina Carducci - Photographe</title>
   </head>
   <body>
@@ -374,11 +379,73 @@
             <img
               loading="lazy"
               src="./assets/images/camera.webp"
-              alt="Caméra"
+              alt="Photo d'appareil photo argentique vintage"
             />
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="container-grid">
+        <div>
+          <h2 class="title-footer">Nina Carducci</h2>
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
+            <p class="address">
+              <span itemprop="streetAddress">68 avenue Alsace Lorraine</span
+              ><br />
+            </p>
+            <p class="zipcode">
+              <span itemprop="postalCode">33200</span>
+              <span itemprop="addressLocality">Bordeaux</span>
+            </p>
+          </div>
+        </div>
+        <div class="social-icons">
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+              aria-label="Instagram de Nina Carducci"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.facebook.com/profile.php?id=61551904838249&locale=fr_FR"
+              target="_blank"
+              aria-label="Facebook de Nina Carducci"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+        </div>
+        <div class="phone-hours">
+          <!-- Téléphone -->
+          <p class="phone">
+            <span itemprop="telephone">05 56 67 78 89</span>
+          </p>
+
+          <!-- Horaires de contact téléphonique -->
+          <div
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="https://schema.org/OpeningHoursSpecification"
+          >
+            <p class="phone-days">Du Lundi au Vendredi</p>
+            <p class="phone-hours-p">de 10h00 à 19h00</p>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        Nina Carducci © 2024. Tous les droits sont réservés.
+      </p>
+    </footer>
   </body>
 </html>
