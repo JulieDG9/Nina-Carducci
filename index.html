@@ -166,8 +166,6 @@
             loading="lazy"
             src="./assets/images/nina-carducci.webp"
             alt="Portrait de Nina Carducci"
-            width="560"
-            height="560"
           />
         </div>
         <div id="about-me">
@@ -192,7 +190,7 @@
         </div>
       </section>
 
-      <div id="gallery">
+      <section id="gallery">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
@@ -275,8 +273,8 @@
             <figcaption class="quote__author">- Richard Avedon</figcaption>
           </figure>
         </div>
-      </div>
-      <div id="services">
+      </section>
+      <section id="services">
         <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
@@ -321,7 +319,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="quote">
         <figure>
           <blockquote>
@@ -334,7 +332,7 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-      <div id="contact">
+      <section id="contact">
         <div class="container">
           <div class="form-container">
             <h2>Une question ? Une demande de devis ?</h2>
@@ -365,18 +363,14 @@
             />
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="container-grid">
         <div class="address-container">
           <h2 class="title-footer">Nina Carducci</h2>
-          <div
-            itemprop="address"
-            itemscope
-            itemtype="https://schema.org/PostalAddress"
-          >
-            <p class="address">
+          <div itemscope itemtype="https://schema.org/PostalAddress">
+            <p itemprop="address" class="address">
               <span itemprop="streetAddress">68 avenue Alsace Lorraine</span
               ><br />
             </p>
@@ -410,21 +404,24 @@
             </li>
           </ul>
         </div>
-        <div class="phone-hours">
-          <!-- Téléphone -->
+        <div
+          class="phone-hours"
+          itemscope
+          itemtype="https://schema.org/ContactPoint"
+        >
           <p class="phone">
             <span itemprop="telephone">05 56 67 78 89</span>
           </p>
-
           <!-- Horaires de contact téléphonique -->
           <div
             class="phone-dispo"
-            itemprop="openingHoursSpecification"
             itemscope
             itemtype="https://schema.org/OpeningHoursSpecification"
           >
             <p>Disponibilité téléphonique :</p>
-            <p>Du Lundi au Vendredi de 10h à 19h</p>
+            <p itemprop="openingHoursSpecification">
+              Du Lundi au Vendredi de 10h à 19h
+            </p>
           </div>
         </div>
       </div>
@@ -432,113 +429,113 @@
         Nina Carducci © 2024. Tous les droits sont réservés.
       </p>
     </footer>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./assets/maugallery.min.js"></script>
+    <script defer src="./assets/scripts.min.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/ab917dddf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/ld+json">
+       {
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "Studio Photo Bordeaux",
+         "url": "https://juliedg9.github.io/Nina-Carducci/",
+
+      "contactPoint": {
+       	"@type": "ContactPoint",
+       	"telephone": "+33 5 56 67 78 89",
+      "openingHours": "Mo-Fr 10:00-19:00"
+         },
+
+         "address": {
+       	"@type": "PostalAddress",
+       	"addressLocality": "Bordeaux",
+       	"addressCountry": "France",
+       	"postalCode": "F-33200",
+       	"streetAddress": "68 avenue Alsace-Lorraine"
+         },
+
+      "description": "Description des services et des prix.",
+      "service": [
+        {
+      	"@type": "Service",
+      	"serviceType": "Shooting photo",
+      	"provider": {
+      	  "@type": "Organization",
+      	  "name": "Studio Photo Bordeaux"
+      	},
+      	"offers": {
+      	  "@type": "Offer",
+      	  "priceCurrency": "EUR",
+      	  "price": "350",
+      	  "itemOffered": {
+      		"@type": "Service",
+      		"name": "Shooting photo",
+      		"description": "Capturer vos moments les plus précieux. Déplacement inclus."
+      	  }
+      	}
+        },
+        {
+      	"@type": "Service",
+      	"serviceType": "Retouches",
+      	"provider": {
+      	  "@type": "Organization",
+      	  "name": "Studio Photo Bordeaux"
+      	},
+      	"offers": {
+      	  "@type": "Offer",
+      	  "priceCurrency": "EUR",
+      	  "price": "50",
+      	  "itemOffered": {
+      		"@type": "Service",
+      		"name": "Retouches photo",
+      		"description": "Retouches professionnelles pour un rendu optimal."
+      	  }
+      	}
+        },
+        {
+      	"@type": "Service",
+      	"serviceType": "Album photos",
+      	"provider": {
+      	  "@type": "Organization",
+      	  "name": "Studio Photo Bordeaux"
+      	},
+      	"offers": {
+      	  "@type": "Offer",
+      	  "priceCurrency": "EUR",
+      	  "price": "400",
+      	  "itemOffered": {
+      		"@type": "Service",
+      		"name": "Album photo",
+      		"description": "Album photo personnalisé avec 30 pages."
+      	  }
+      	}
+        }
+      ]
+         "iso6523Code": "0009:44306184100039",
+         "iso6523Code": "9957:FR64443061841",
+       }
+    </script>
   </body>
 </html>
-<script
-  defer
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"
-></script>
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"
-></script>
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-  crossorigin="anonymous"
-></script>
-
-<script defer src="./assets/maugallery.min.js"></script>
-<script defer src="./assets/scripts.min.js"></script>
-<script
-  defer
-  src="https://kit.fontawesome.com/ab917dddf5.js"
-  crossorigin="anonymous"
-></script>
-<script type="application/ld+json">
-   {
-     "@context": "https://schema.org",
-     "@type": "Organization",
-     "name": "Studio Photo Bordeaux",
-     "url": "https://juliedg9.github.io/Nina-Carducci/",
-
-  "contactPoint": {
-   	"@type": "ContactPoint",
-   	"telephone": "+33 5 56 67 78 89",
-  "openingHours": "Mo-Fr 10:00-19:00"
-     },
-
-     "address": {
-   	"@type": "PostalAddress",
-   	"addressLocality": "Bordeaux",
-   	"addressCountry": "France",
-   	"postalCode": "F-33200",
-   	"streetAddress": "68 avenue Alsace-Lorraine"
-     },
-
-  "description": "Description des services et des prix.",
-  "service": [
-    {
-  	"@type": "Service",
-  	"serviceType": "Shooting photo",
-  	"provider": {
-  	  "@type": "Organization",
-  	  "name": "Studio Photo Bordeaux"
-  	},
-  	"offers": {
-  	  "@type": "Offer",
-  	  "priceCurrency": "EUR",
-  	  "price": "350",
-  	  "itemOffered": {
-  		"@type": "Service",
-  		"name": "Shooting photo",
-  		"description": "Capturer vos moments les plus précieux. Déplacement inclus."
-  	  }
-  	}
-    },
-    {
-  	"@type": "Service",
-  	"serviceType": "Retouches",
-  	"provider": {
-  	  "@type": "Organization",
-  	  "name": "Studio Photo Bordeaux"
-  	},
-  	"offers": {
-  	  "@type": "Offer",
-  	  "priceCurrency": "EUR",
-  	  "price": "50",
-  	  "itemOffered": {
-  		"@type": "Service",
-  		"name": "Retouches photo",
-  		"description": "Retouches professionnelles pour un rendu optimal."
-  	  }
-  	}
-    },
-    {
-  	"@type": "Service",
-  	"serviceType": "Album photos",
-  	"provider": {
-  	  "@type": "Organization",
-  	  "name": "Studio Photo Bordeaux"
-  	},
-  	"offers": {
-  	  "@type": "Offer",
-  	  "priceCurrency": "EUR",
-  	  "price": "400",
-  	  "itemOffered": {
-  		"@type": "Service",
-  		"name": "Album photo",
-  		"description": "Album photo personnalisé avec 30 pages."
-  	  }
-  	}
-    }
-  ]
-     "iso6523Code": "0009:44306184100039",
-     "iso6523Code": "9957:FR64443061841",
-   }
-</script>

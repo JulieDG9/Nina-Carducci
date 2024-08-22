@@ -55,6 +55,14 @@ body {
   position: relative;
 }
 
+.picture.left {
+  width: 100%;
+  max-width: 560px;
+  min-width: 205px;
+  height: auto;
+  aspect-ratio: 1.0028;
+}
+
 .picture.left::before {
   content: " ";
   background-color: #e5975f;
@@ -206,7 +214,15 @@ body {
 #contact .container {
   display: flex;
 }
-.picture.right::before {
+.picture-right {
+  width: 100%;
+  max-width: 418px;
+  min-width: 185px;
+  height: auto;
+  aspect-ratio: 1.00196; /* Ratio calculé à partir des valeurs données */
+}
+
+.picture-right::before {
   content: " ";
   background-color: #beb45a;
   width: 374px;
@@ -344,6 +360,13 @@ footer {
   .picture {
     width: 50%;
   }
+  /* .picture-left {
+    width: 100%;
+    max-width: 560px;
+    min-width: 204.8px;
+    height: auto;
+    aspect-ratio: 1.0028;
+  } */
   .picture.left::before {
     width: 100%;
     height: 30%;
@@ -414,6 +437,12 @@ footer {
     padding-block: 1em;
     text-align: center;
   }
+
+  .picture-left {
+    width: 150px;
+    height: 150px;
+  }
+
   .picture.left::before,
   .picture.right::before {
     height: 150px;
