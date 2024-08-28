@@ -47,6 +47,11 @@ body {
   height: auto;
 }
 
+.visually-hidden {
+  color: black;
+  background-color: white;
+}
+
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -103,9 +108,9 @@ body {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
+/* #gallery {
+  min-height: 100vh;
+} */
 .title {
   text-align: center;
   padding-block: 2em;
