@@ -10,10 +10,6 @@
       name="description"
       content="Photographe professionnel à Bordeaux. Capturez vos moments précieux avec Nina Carducci"
     />
-    <meta
-      name="keywords"
-      content="photographe d'évènements, photographie d'évènements, photographie corporative, photographe d'entreprise, photographie d'entreprise, photographe de mariage, photographie de mariage, photographie, portraits, photographe en région bordelaise"
-    />
 
     <!-- Balises Open Graph ajoutées pour les Réseaux sociaux comme Facebook, Instagram, ... -->
     <meta
@@ -367,17 +363,22 @@
             </p>
             <form action="#" method="post">
               <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom" />
+              <input type="text" name="nom" id="nom" required />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
               <label for="message">Message</label>
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
+                required
               ></textarea>
               <input type="submit" value="Envoyer" />
+              <p>
+                Merci pour votre message. Nous vous répondrons dans les plus
+                brefs délais.
+              </p>
             </form>
           </div>
           <div class="picture right">
